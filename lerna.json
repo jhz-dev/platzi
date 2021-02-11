@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "courses/**",
+    "packages/*"
+  ],
+  "version": "independent"
+}

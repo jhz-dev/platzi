@@ -1,0 +1,24 @@
+{
+  "name": "frontend-developer",
+  "version": "1.0.0",
+  "description": "code space for the frontend developer course in platzi",
+  "keywords": [
+    "platzi",
+    "frontend",
+    "developer",
+    "course"
+  ],
+  "author": "Jonathan Hernandez <jhzapata.seven@gmail.com>",
+  "homepage": "https://platzi.com/clases/frontend-developer/",
+  "license": "MIT",
+  "main": "lib/doctor.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
