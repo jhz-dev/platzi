@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* p:first-child {
+        color: orange
+    }
+    p:last-child { 
+        color: brown;
+    } */
+    p:nth-child(2n) { 
+        color: green;
+    }
+    p:nth-child(2n+1) { 
+        color: orange;
+    }
+    p::first-letter {
+        font-weight: bold;
+    }
+</style>
+<body>
+    <p>Zorro 🦊 </p>
+    <p>Pajaro 🦜 </p>
+    <p>Conejo 🐰 </p>
+    <p>Rana 🐸 </p>
+    <p>Perro 🐶 </p>
+</body>
+</html>
