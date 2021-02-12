@@ -4,39 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
     <title>Header</title>
 </head>
 <style>
     :root {
         --mountain-meadow-green: #21C08B;
         --han-purple: #5e1dfc;
+        --lavender-floral-purple: #AB88FF;
         --header-height: 80px;
         --header-logo-width: 200px;
     }
-
     body {
-        margin: 0;
         background: linear-gradient(to bottom, var(--mountain-meadow-green), var(--han-purple));
+        /* background-color: var(--lavender-floral-purple); */
         height: 100vh;
+        font-family: 'Mulish', sans-serif;
+        margin: 0;
     }
-
-    header {
-        width: 100%;
-        height: var(--header-height);
+    .header {
+        align-items: center;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        height: var(--header-height);
+        justify-content: space-between;
+        padding: 0 30px;
     }
-
-    header img {
+    .header__img {
         width: var(--header-logo-width);
-        height: calc(var(--header-height) - 20px);
-        margin-left: 10px;
+    }
+    .header__menu {
+        position: relative;
+        width: 90px;
+    }
+    .header__menu--profile {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        font-size: 17px;
+    }
+    .header__menu--profile img {
+        width: 40px;
+    }
+    .header__menu:hover .header__menu--list, header__menu--list:hover {
+        display: block;
+    }
+    .header__menu--list {
+        display: none;
+        color: white;
+        list-style: none;
+        margin: 0 0 0 -10px;
+        padding: 0;
+        position: absolute;
+        text-align: right;
+        width: 100px;
+    }
+    .header__menu--list li:first-child {
+        margin-top: 0;
+    }
+    .header__menu--list li{
+        margin: 10px 0;
+    }
+    .header__menu--list li a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .header__menu--list li a:hover{
+        text-decoration: underline;
     }
 </style>
 <body>
-    <header>
-        <img src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="platzi video logo">
+    <header class="header">
+        <img class="header__img" 
+            src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="platzi video logo">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="https://i.ibb.co/b3D7Lxx/user-icon.png" alt="profile icon">
+                <p>Perfil</p>
+            </div>
+            <ul class="header__menu--list">
+                <li><a href="#">Cuenta</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+            </ul>
+        </div>
     </header>
 </body>
 </html>
