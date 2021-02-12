@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+</head>
+<style>
+    :root {
+        --mountain-meadow-green: #21C08B;
+        --han-purple: #5e1dfc;
+        --header-height: 80px;
+        --header-logo-width: 200px;
+    }
+
+    body {
+        margin: 0;
+        background: linear-gradient(to bottom, var(--mountain-meadow-green), var(--han-purple));
+        height: 100vh;
+    }
+
+    header {
+        width: 100%;
+        height: var(--header-height);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    header img {
+        width: var(--header-logo-width);
+        height: calc(var(--header-height) - 20px);
+        margin-left: 10px;
+    }
+</style>
+<body>
+    <header>
+        <img src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="platzi video logo">
+    </header>
+</body>
+</html>
