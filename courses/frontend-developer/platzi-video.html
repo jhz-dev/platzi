@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
-    <title>Header</title>
+    <title>Platzi video</title>
 </head>
 <style>
     :root {
@@ -17,8 +17,8 @@
         --header-logo-width: 200px;
     }
     body {
-        background: linear-gradient(to bottom, var(--mountain-meadow-green), var(--han-purple));
-        /* background-color: var(--lavender-floral-purple); */
+        /* background: linear-gradient(to bottom, var(--mountain-meadow-green), var(--han-purple)); */
+        background-color: var(--han-purple);
         height: 100vh;
         font-family: 'Mulish', sans-serif;
         margin: 0;
@@ -76,6 +76,33 @@
     .header__menu--list li a:hover{
         text-decoration: underline;
     }
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__title {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+    .search {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        border: 1px solid #fff;
+        color: #fff;
+        font-family: 'Mulish', sans-serif;
+        font-size: 1.1rem;
+        height: 40px;
+        padding: 0 10px;
+        width: 70%;
+    }
+    .search::placeholder {
+        color: #fff;
+    }
+    .search:focus {
+        outline: none;
+    }
 </style>
 <body>
     <header class="header">
@@ -92,5 +119,10 @@
             </ul>
         </div>
     </header>
+
+    <section class="main">
+        <h2 class="main__title">¿Qué quieres ver hoy?</h2>
+        <input type="text" name="search" id="searchBox" placeholder="Buscar..." class="search"/>
+    </section>
 </body>
 </html>
