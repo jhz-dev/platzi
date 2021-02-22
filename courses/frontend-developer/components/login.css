@@ -147,4 +147,9 @@ body {
         width: 100%;
         background-color: transparent;
     }
+    
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
