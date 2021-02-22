@@ -19,6 +19,9 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "start": "yarn build-css",
+    "build-css": "yarn build-css:login && yarn build-css:main",
+    "build-css:login": "sass pages/login/login.scss pages/login/login.css",
+    "build-css:main": "sass pages/main/styles.scss pages/main/styles.css"
   }
 }

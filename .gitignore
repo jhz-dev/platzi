@@ -33,3 +33,4 @@ coverage/
 
 courses/frontend-developer/**/**.css
 courses/frontend-developer/**/**.css.map
+courses/frontend-developer/**/**.scss.map
