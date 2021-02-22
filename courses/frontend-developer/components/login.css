@@ -1,0 +1,120 @@
+:root {
+    --mountain-meadow-green: #21C08B;
+    --han-purple: #5e1dfc;
+    --lavender-floral-purple: #AB88FF;
+    --header-height: 80px;
+    --header-logo-width: 200px;
+}
+body {
+    height: 100vh;
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+}
+.header {
+    background-color: var(--mountain-meadow-green);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: var(--header-height);
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.header__img {
+    width: var(--header-logo-width);
+}
+.login {
+    background: linear-gradient(to bottom, var(--mountain-meadow-green), var(--han-purple));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+.login__container {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 700px;
+    padding: 0px 40px;
+    width: 300px;
+}
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    width: 100%;
+}
+.login__container--remember-me {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.login__container--remember-me label{
+    display: flex;
+    align-items: center;
+}
+.login__container--remember-me a{
+    color: #fff;
+    text-decoration: none;
+}
+.login__container--remember-me a:hover{
+    text-decoration: underline;
+}
+.login__container--social-media > div{
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.login__container--social-media > div > img{
+    margin-right: 10px;
+}
+.login__container--register {
+    font-size: 14px;
+}
+.login__container--register a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.login__container--register a:hover {
+    text-decoration: underline;
+}
+.input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+.input::placeholder {
+    color: #fff;
+    font-size: 18px;
+}
+.button {
+    height: 40px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
