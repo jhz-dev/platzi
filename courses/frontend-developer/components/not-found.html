@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Not found</title>
+    </head>
+
+    <style>
+        :root {
+            --mountain-meadow-green: #21C08B;
+            --han-purple: #5e1dfc;
+            --lavender-floral-purple: #AB88FF;
+            --header-height: 80px;
+            --header-logo-width: 200px;
+            --footer-height: 80px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'Mulish', sans-serif;
+            background: linear-gradient(to bottom, var(--mountain-meadow-green), var(--lavender-floral-purple));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .notFound {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .notFound div {
+            font-weight: bold;
+            font-size: 250px;
+        }
+        .notFound p {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        @keyframes pulse {
+            0% {transform: scale(1);}
+            50% {transform: scale(1.3);}
+            100% {transform: scale(1);}
+        }
+        .pulse {
+            animation-name: pulse;
+            animation-duration: 1s;
+            animation-duration: 2.5s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+        }
+    </style>
+
+    <body>
+        <section class="notFound">
+            <div class="pulse">404</div>
+            <p>Página no encontrada</p>
+        </section>
+    </body>
+
+</html>
