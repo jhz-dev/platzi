@@ -4,6 +4,7 @@
     --lavender-floral-purple: #AB88FF;
     --header-height: 80px;
     --header-logo-width: 200px;
+    --footer-height: 80px;
 }
 body {
     height: 100vh;
@@ -29,7 +30,7 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 0px 30px;
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 .login__container {
     align-items: center;
@@ -94,9 +95,12 @@ body {
 }
 .input {
     background-color: transparent;
-    border: none;
+    border-left: none;
+    border-top: none;
+    border-right: none;
     border-bottom: 3px solid #fff;
     color: #fff;
+    font-family: 'Mulish', sans-serif;
     font-size: 18px;
     margin-bottom: 30px;
     padding: 15px;
@@ -114,7 +118,33 @@ body {
     border-radius: 20px;
     cursor: pointer;
     outline: none;
+    letter-spacing: 1px;
 }
 .button:hover {
     background-color: rgba(255, 255, 255, 0.2);
+}
+.footer {
+    background-color: var(--han-purple);
+    height: var(--footer-height);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 30px;
+}
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 14px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+    .login__container {
+        border: none;
+        padding: 0;
+        width: 100%;
+        background-color: transparent;
+    }
 }
