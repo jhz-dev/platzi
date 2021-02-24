@@ -34,3 +34,7 @@ coverage/
 courses/frontend-developer/**/**.css
 courses/frontend-developer/**/**.css.map
 courses/frontend-developer/**/**.scss.map
+
+courses/javascript-professional/**/**.css
+courses/javascript-professional/**/**.css.map
+courses/javascript-professional/**/**.scss.map

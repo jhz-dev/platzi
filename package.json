@@ -2,12 +2,14 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "live-server": "^1.2.1"
   },
   "dependencies": {
     "sass": "^1.32.8"
   },
   "scripts": {
-    "start:frontend-developer": "lerna run --scope frontend-developer start"
+    "start:frontend-developer": "lerna run --scope frontend-developer start",
+    "start:javascript-professional": "lerna run --scope javascript-professional start"
   }
 }

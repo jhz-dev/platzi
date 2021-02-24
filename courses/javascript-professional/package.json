@@ -1,0 +1,25 @@
+{
+  "name": "javascript-professional",
+  "version": "1.0.0",
+  "description": "repo for javascript professional course from platzi",
+  "keywords": [
+    "platzi",
+    "javascript",
+    "course"
+  ],
+  "author": "Jonathan Hernández Zapata <jhzapata.seven@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "private": false,
+  "scripts": {
+    "start": "yarn build-css && live-server",
+    "build-css": "yarn build-css:media-player",
+    "build-css:media-player": "sass assets/index.scss assets/index.css"
+  }
+}
