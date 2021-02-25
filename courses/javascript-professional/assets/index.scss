@@ -35,4 +35,25 @@ main {
         outline: none;
     }
   }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.button {
+  background-color: $mountain-meadow-green;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid $white;
+  color: $white;
+  outline: none;
+  cursor: pointer;
+  text-transform: capitalize;
+
+  &:hover {
+    background-color: darken($mountain-meadow-green, 1);
+  }
 }

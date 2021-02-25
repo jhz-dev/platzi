@@ -12,9 +12,12 @@
         <video class="video-player__player" controls>
             <source src="./assets/BigBuckBunny_512kb.mp4"/>
         </video>
-        <button>play/pause</button>
+        <div class="video-player__actions">
+            <button class="button video-player__playPause">play/pause</button>
+            <button class="button video-player__muteUnmute">mute/unmute</button>
+        </div>
     </main>
 
-    <script src="./lib/index.js"></script>
+    <script type="module" src="./lib/index.js"></script>
 </body>
 </html>
