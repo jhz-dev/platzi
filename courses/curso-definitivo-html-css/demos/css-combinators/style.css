@@ -1,0 +1,15 @@
+.adjacent-sibling h2 + p {
+    color: red;
+}
+
+.general-sibling h2 ~ p {
+    color: blue;
+}
+
+.child-sibling p {
+    color: orange;
+}
+
+.child-sibling > p {
+    color: green;
+}

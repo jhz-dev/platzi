@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Adjacent sibling + -->
+    <div class="adjacent-sibling">
+        <h2>Soy un h2</h2>
+        <p>soy un p</p>
+        <h2>Soy un h2</h2>
+        <h3>Soy un h3</h3>
+        <p>soy un p</p>
+        <h2>Soy un h2</h2>
+        <p>soy un p</p>
+    </div>
+    <hr>
+    <!-- general sibling ~ -->
+    <div class="general-sibling">
+        <h2>Soy un h2</h2>
+        <p>soy un p</p>
+        <h2>Soy un h2</h2>
+        <h3>Soy un h3</h3>
+        <p>soy un p</p>
+    </div>
+    <hr>
+    <!-- child sibling > and descendent sibling-->
+    <div class="child-sibling">
+        <article>
+            <p>soy un p</p>
+        </article>
+        <article>
+            <p>soy un p</p>
+        </article>
+        <section>
+            <div>
+                <p>soy un p</p>
+            </div>
+        </section>
+        <p>soy un p</p>
+    </div>
+</body>
+</html>
